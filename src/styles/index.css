@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+  header {
+    @apply h-[70px] bg-gray-900;
+  }
   main {
-    @apply min-h-screen w-full bg-gray-900;
+    @apply min-h-screen w-full px-3 bg-gray-900;
   }
   p,
   span,
@@ -17,5 +20,20 @@
   label,
   a {
     @apply text-gray-300;
+  }
+
+  .board {
+    @apply space-x-3 border border-gray-300 rounded-lg px-3 py-4;
+  }
+
+  .benchmark {
+    @apply bg-gray-300 rounded-full h-6 w-6;
+  }
+  .subplot {
+    @apply bg-gray-300 rounded-full h-3 w-3;
+  }
+
+  .btn {
+    @apply text-gray-300 font-semibold bg-inherit border rounded-lg px-6 py-1 hover:text-gray-900 hover:bg-gray-300 transition duration-150 ease-out;
   }
 }

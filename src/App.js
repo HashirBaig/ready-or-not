@@ -2,13 +2,14 @@
 import { ChakraProvider, theme } from "@chakra-ui/react"
 import Header from "./components/layout/Header"
 import Main from "./components/layout/Main"
+import Board from "./components/Board"
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Header />
       <Main>
-        <p>Main</p>
+        <Board />
       </Main>
     </ChakraProvider>
   )
