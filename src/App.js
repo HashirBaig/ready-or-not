@@ -1,10 +1,11 @@
 // import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { ChakraProvider, theme } from "@chakra-ui/react"
+import Header from "./components/layout/Header"
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <div>Hello world</div>
+      <Header />
     </ChakraProvider>
   )
 }
